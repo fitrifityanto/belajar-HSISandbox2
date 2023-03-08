@@ -1,0 +1,241 @@
+:root {
+    --color-background: white;
+    --color-accent: #F2F0DF;
+
+    --ff-primary: 'Poppins', sans-serif;
+    --ff-hero-heading: 'Playfair Display', sans-serif;
+
+}
+/* css reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+/* end css reset */
+
+body {
+    background-color: var(--color-background);
+    font-family: var(--ff-primary);
+
+}
+
+img {
+ 
+    max-width: 100%;
+  }
+
+h1 {
+    font-family: var(--ff-hero-heading);
+    font-size: 52px;
+    font-weight: 400;
+}
+
+main {
+    margin-top: 123px;
+    margin-bottom: 178px;
+    margin-inline: max(1rem, 50% - 81.5rem/2);
+}
+
+.container {
+    max-width: 1163px;
+    margin-inline: auto;
+}
+
+
+nav > ul > li {
+    display: inline-block;
+}
+
+header {
+    margin-top: 41px;
+    margin-inline: max(1rem, 50% - 81.5rem/2);
+}
+
+.container {
+    max-width: 1163px;
+    margin-inline: auto;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-logo {
+    margin-right: auto;
+}
+
+.nav-items {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 36px;
+    text-transform: uppercase;
+}
+
+.nav-items::after {
+    content: '';
+    display: block;
+    color: black;
+    /* margin: 0 auto; */
+    width: 35%;
+    border-bottom: 1px solid black;
+    visibility: hidden;
+}
+
+.nav-items:hover::after {
+    visibility: visible;
+}
+
+
+/* main section */
+.hero-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 132px;
+
+}
+
+.column-text {
+   max-width: 494px;
+   flex: 1 0 100%;
+}
+
+.column-text_desc {
+    margin-top: 20px;
+    margin-bottom: 34px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28.44px;
+}
+
+.column-text_cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-button {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28.44px;
+
+    background-color: var(--color-accent);
+    border: 0;
+    padding: 14px 25px;
+    border-radius: 19px;
+}
+
+.cta-text {
+    text-decoration: underline;
+}
+
+.column-text_coupon {
+    border: 1px solid black;
+    border-radius: 19px;
+    box-shadow: 15px 9px 30px rgba(160, 160, 160, 0.25);
+    height: 155px;
+    padding-left: 40px;
+    padding-right: 31px;
+    margin-top: 46px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 53px;
+}
+
+.coupon-desc {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22.12px;
+}
+
+.coupon-price {
+    font-size: 33px;
+    font-weight: 300;
+    line-height: 52.14px;
+}
+
+.column-image {
+    height: 531px;
+    flex: 1 0 auto;
+    display: grid;
+    gap: 29px;
+}
+
+.image-background {
+    border-radius: 19px;
+    display: grid;
+    align-items: end;
+}
+
+.image-1 {
+    background-image: url(static/img/clothing1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.image-2 {
+    background-image: url(static/img/clothing2.jpg);
+    background-size: cover;
+}
+
+.image-3 {
+    background-image: url(static/img/clothing3.jpg);
+    background-size: cover;
+    background-position: 50%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.box-price {
+    background-color: white;
+    border-radius: 10px;
+    width: 232px;
+    margin-inline: auto;
+    margin-bottom: 12px;
+    padding: 11px 0 11px 17px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-product {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25.28px;
+}
+
+.subtitle-product {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.12px;
+}
+
+.box-price_price {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 26.86px;
+
+    padding: 15px 23px;
+    border-left: 1px solid #E4E4E4;
+}
